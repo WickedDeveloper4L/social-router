@@ -1,0 +1,64 @@
+.page{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    .title_container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        border: 2px solid rgb(14, 191, 38);
+        width: fit-content;
+        padding: 20px 10px;
+        text-align: center;
+        justify-content: center;
+        
+        .title{
+            color: rgb(14, 191, 38);
+            font-size: 2rem;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .logo{
+            color: rgb(14, 191, 38);
+            font-size: 2rem;  
+        }
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        gap: 0.8rem;
+
+        .label{
+            color: rgb(14, 191, 38);
+            font-size: 1.5rem;
+            font-family: 'Rubik', sans-serif;
+            
+        }
+        .sublabel{
+            color: rgba(0, 0, 0, 0.545);
+            font-size: 0.8rem;
+            font-family: 'Rubik', sans-serif;
+            padding-bottom: 1rem;
+            width: 600px;
+        }
+    }
+
+    .link_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .link{
+            color: rgb(14, 191, 38);
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;  
+        }
+    }
+}

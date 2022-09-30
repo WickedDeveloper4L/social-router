@@ -2,6 +2,7 @@ import React from 'react'
 import './whatsapp.scss'
 import { CustomInput } from '../../components/input/CustomInput'
 import {IoLogoWhatsapp} from 'react-icons/io'
+import CustomButton from '../../components/customButton/CustomButton'
 
 const Whatsapp = () => {
   const [number, setNumber] = React.useState({
@@ -53,9 +54,9 @@ const Whatsapp = () => {
     <IoLogoWhatsapp className='logo'/>
     </div>
 
-    <form onSubmit={generateLink}>
+    <form onSubmit={generateLink} className='form'>
     <h2 className="label">Your WhatsApp Number</h2>
-    <span className='label'>Type your WhatsApp phone number. Make sure you include the country code 
+    <span className='sublabel'>Type your WhatsApp phone number. Make sure you include the country code 
     followed by the area code. E.g.1 for the US, 44 for the UK. <br/>Include country code without + symbol. 
     Eg. if country code is +234 and WhatsApp number is 08031234567, then type "2348031234567" below.</span>
     <CustomInput
@@ -67,7 +68,7 @@ const Whatsapp = () => {
         handleChange={handleChange}
       />
     <h2 className="label">Welcome Message (Optional)</h2>
-    <span className="label">Automatically include this text when a user clicks on your chat link, making it easier to start a conversation.</span>
+    <span className="sublabel">Automatically include this text when a user clicks on your chat link, making it easier to start a conversation.</span>
       <CustomInput
         type='textarea'
         required
@@ -77,12 +78,12 @@ const Whatsapp = () => {
         handleChange={handleChange}
       />
 
-        <button onClick={generateLink}>Generate Link</button>
+        <CustomButton onClick={generateLink} className='button'>Generate Link</CustomButton>
+        <span className="sublabel">link is below</span>
     </form>
     <div className='link_container'>
     <span className='link'>{link.link}</span>
     </div>
-      
     </div>
   )
 }
