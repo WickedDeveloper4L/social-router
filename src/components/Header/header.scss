@@ -1,0 +1,59 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    user-select: none;
+    background-color: black;
+
+
+    .title{
+        text-align: center;
+        font-size: 2.8rem;
+        font-family: 'Luckiest Guy', cursive;
+        color: rgb(25, 206, 206);
+        padding: 0.8rem;
+    }
+
+    .nav-container{
+        display: flex;
+        width: 90%;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid black;
+
+        .nav-item{
+            padding: 15px 30px;
+
+            .whatsapp{
+                width: 2rem;
+                height: 2rem;
+                color: rgb(14, 191, 38);
+            }
+
+            .facebook{
+                width: 2rem;
+                height: 2rem;
+                color: rgb(4, 68, 108);
+            }
+            .instagram{
+                width: 2rem;
+                height: 2rem;
+                color: rgb(234, 26, 82);
+            }
+            .twitter{
+                width: 2rem;
+                height: 2rem;
+                color: rgb(12, 131, 215);
+            }
+            .telegram{
+                width: 2rem;
+                height: 2rem;
+                color: rgb(4, 68, 108);
+            }
+        }
+    }
+    
+}

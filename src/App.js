@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './components/Header/Header';
+import {Routes, Route} from 'react-router-dom'
+import Whatsapp from './pages/Whatsapp/Whatsapp';
+import Facebook from './pages/Facebook/Facebook';
+import Instagram from './pages/Instagram/Instagram';
+import Telegram from './pages/Telegram/Telegram';
+import Twitter from './pages/Twitter/Twitter';
+import { Error } from './pages/ErrorPage/Error';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Whatsapp/>}/>
+        <Route path='/instagram' element={<Instagram/>}/>
+        <Route path='/facebook' element={<Facebook/>}/>
+        <Route path='/telegram' element={<Telegram/>}/>
+        <Route path='/twitter' element={<Twitter/>}/>
+        <Route path='*' element={<Error/>}/>
+      </Routes>
     </div>
   );
 }

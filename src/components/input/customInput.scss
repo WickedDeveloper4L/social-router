@@ -1,0 +1,29 @@
+.group{
+    display: flex;
+    align-items: center;
+    .form-input{
+        padding: 10px 10px 10px 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        font-size: 0.8rem;
+        font-weight: 500;
+        width: 210px;
+        border-radius: 5px;
+        font-family: 'Rubik', sans-serif;
+        transition: 300ms ease-in-out;
+        
+        &:focus{
+            border-color: goldenrod;
+            border: 2px solid goldenrod;
+        }
+
+        &::placeholder{
+            color: rgba(0, 0, 0, 0.494);
+            font-family: 'Rubik', sans-serif;
+        }
+
+
+    }
+
+}
