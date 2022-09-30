@@ -59,6 +59,33 @@
             color: rgb(14, 191, 38);
             font-size: 1rem;
             font-family: 'Rubik', sans-serif;  
+            padding: 20px 20px; 
+            border: 2px solid black;
         }
+    }
+    @media screen and (max-width: 600px) {
+        .title_container{
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+            border: 2px solid rgb(14, 191, 38);
+            width: fit-content;
+            padding: 10px 6px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+            
+            .title{
+                color: rgb(14, 191, 38);
+                font-size: 1.3rem;
+                font-family: 'Rubik', sans-serif;
+            }
+    
+            .logo{
+                color: rgb(14, 191, 38);
+                font-size: 1.5rem;  
+            }
+        }
+
     }
 }

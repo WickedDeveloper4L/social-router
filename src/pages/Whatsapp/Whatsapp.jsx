@@ -3,6 +3,7 @@ import './whatsapp.scss'
 import { CustomInput } from '../../components/input/CustomInput'
 import {IoLogoWhatsapp} from 'react-icons/io'
 import CustomButton from '../../components/customButton/CustomButton'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 const Whatsapp = () => {
   const [number, setNumber] = React.useState({
@@ -17,7 +18,6 @@ const Whatsapp = () => {
     link: ""
   })
 
-  console.log(number)
   function handleChange (event){
     const {name, value} = event.target
 
@@ -45,6 +45,8 @@ const Whatsapp = () => {
       link: `https://wa.me/${number.phoneNumber}?text=${encodeURI(text.text)}`
     }))
   }
+
+ 
 
 
   return (
@@ -83,7 +85,9 @@ const Whatsapp = () => {
     </form>
     <div className='link_container'>
     <span className='link'>{link.link}</span>
+
     </div>
+    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy Link</CustomButton></CopyToClipboard>
     </div>
   )
 }

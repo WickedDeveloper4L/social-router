@@ -7,6 +7,7 @@ import Instagram from './pages/Instagram/Instagram';
 import Telegram from './pages/Telegram/Telegram';
 import Twitter from './pages/Twitter/Twitter';
 import { Error } from './pages/ErrorPage/Error';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/twitter' element={<Twitter/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

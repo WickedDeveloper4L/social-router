@@ -1,0 +1,92 @@
+.page{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    .telegram_container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        border: 2px solid rgb(4, 68, 108);
+        width: fit-content;
+        padding: 20px 10px;
+        text-align: center;
+        justify-content: center;
+        
+        .telegram_title{
+            color: rgb(4, 68, 108);
+            font-size: 2rem;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .telegram_logo{
+            color: rgb(4, 68, 108);
+            font-size: 2rem;  
+        }
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        gap: 0.8rem;
+
+        .telegram_label{
+            color: rgb(4, 68, 108);
+            font-size: 1.5rem;
+            font-family: 'Rubik', sans-serif;
+            
+        }
+        .telegram_sublabel{
+            color: rgba(0, 0, 0, 0.545);
+            font-size: 0.8rem;
+            font-family: 'Rubik', sans-serif;
+            padding-bottom: 1rem;
+            width: 600px;
+        }
+    }
+
+    .link_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .telegram_link{
+            color: rgb(4, 68, 108);
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;  
+            padding: 20px 20px; 
+            border: 2px solid black;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .telegram_container{
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+            border: 2px solid rgb(4, 68, 108);
+            width: fit-content;
+            padding: 10px 6px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+            
+            .telegram_title{
+                color: rgb(4, 68, 108);
+                font-size: 1.3rem;
+                font-family: 'Rubik', sans-serif;
+            }
+    
+            .telegram_logo{
+                color: rgb(4, 68, 108);
+                font-size: 1.5rem;  
+            }
+        }
+
+    }
+}
