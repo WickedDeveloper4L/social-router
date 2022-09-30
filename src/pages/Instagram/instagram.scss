@@ -10,7 +10,6 @@
     .instagram_container{
         display: flex;
         align-items: center;
-        gap: 2rem;
         border: 2px solid rgb(234, 26, 82);
         width: fit-content;
         padding: 20px 10px;
@@ -32,7 +31,7 @@
     .form{
         display: flex;
         flex-direction: column;
-        max-width: 80vw;
+        width: 80%;
         gap: 0.8rem;
 
         .instagram_label{
@@ -60,7 +59,6 @@
             font-size: 1rem;
             font-family: 'Rubik', sans-serif; 
             padding: 20px 20px; 
-            border: 2px solid black;
         }
     }
 
@@ -68,7 +66,6 @@
         .instagram_container{
             display: flex;
             align-items: center;
-            gap: 1.3rem;
             border: 2px solid rgb(234, 26, 82);
             width: fit-content;
             padding: 10px 6px;
@@ -85,6 +82,26 @@
             .instagram_logo{
                 color: rgb(234, 26, 82);
                 font-size: 1.5rem;  
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            gap: 0.8rem;
+    
+            .instagram_label{
+                color: rgb(234, 26, 82);
+                font-size: 1.2rem;
+                font-family: 'Rubik', sans-serif;
+                
+            }
+            .instagram_sublabel{
+                color: rgba(0, 0, 0, 0.545);
+                font-size: 0.8rem;
+                font-family: 'Rubik', sans-serif;
+                padding-bottom: 1rem;
+                width: 250px;
             }
         }
 

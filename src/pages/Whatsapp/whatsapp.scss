@@ -1,7 +1,7 @@
 .page{
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
     width: 100vw;
     align-items: center;
@@ -32,7 +32,7 @@
     .form{
         display: flex;
         flex-direction: column;
-        max-width: 80vw;
+        width: 80%;
         gap: 0.8rem;
 
         .label{
@@ -60,14 +60,12 @@
             font-size: 1rem;
             font-family: 'Rubik', sans-serif;  
             padding: 20px 20px; 
-            border: 2px solid black;
         }
     }
     @media screen and (max-width: 600px) {
         .title_container{
             display: flex;
             align-items: center;
-            gap: 1.3rem;
             border: 2px solid rgb(14, 191, 38);
             width: fit-content;
             padding: 10px 6px;
@@ -84,6 +82,27 @@
             .logo{
                 color: rgb(14, 191, 38);
                 font-size: 1.5rem;  
+            }
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            gap: 0.8rem;
+    
+            .label{
+                color: rgb(14, 191, 38);
+                font-size: 1.2rem;
+                font-family: 'Rubik', sans-serif;
+                
+            }
+            .sublabel{
+                color: rgba(0, 0, 0, 0.545);
+                font-size: 0.8rem;
+                font-family: 'Rubik', sans-serif;
+                padding-bottom: 1rem;
+                width: 250px;
             }
         }
 

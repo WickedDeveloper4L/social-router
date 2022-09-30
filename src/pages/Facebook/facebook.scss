@@ -32,7 +32,7 @@
     .form{
         display: flex;
         flex-direction: column;
-        max-width: 80vw;
+        width: 80%;
         gap: 0.8rem;
 
         .facebook_label{
@@ -60,7 +60,6 @@
             font-size: 1rem;
             font-family: 'Rubik', sans-serif;  
             padding: 20px 20px; 
-            border: 2px solid black;
         }
     }
 
@@ -68,7 +67,6 @@
         .facebook_container{
             display: flex;
             align-items: center;
-            gap: 1.3rem;
             border: 2px solid rgb(4, 68, 108);
             width: fit-content;
             padding: 10px 6px;
@@ -87,6 +85,25 @@
                 font-size: 1.5rem;  
             }
         }
-
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            gap: 0.8rem;
+    
+            .facebook_label{
+                color: rgb(4, 68, 108);
+                font-size: 1.2rem;
+                font-family: 'Rubik', sans-serif;
+                
+            }
+            .facebook_sublabel{
+                color: rgba(0, 0, 0, 0.545);
+                font-size: 0.8rem;
+                font-family: 'Rubik', sans-serif;
+                padding-bottom: 1rem;
+                width: 250px;
+            }
+        }
     }
 }
