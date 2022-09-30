@@ -59,7 +59,7 @@ const Instagram = () => {
     <div className='link_container'>
     <span className='instagram_link'>{link.link}</span>
     </div>
-    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy Link</CustomButton></CopyToClipboard>
+    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy to clipboard</CustomButton></CopyToClipboard>
     </div>
   )
 }

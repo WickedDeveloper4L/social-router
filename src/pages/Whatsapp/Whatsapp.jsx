@@ -87,7 +87,7 @@ const Whatsapp = () => {
     <span className='link'>{link.link}</span>
 
     </div>
-    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy Link</CustomButton></CopyToClipboard>
+    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy to clipboard</CustomButton></CopyToClipboard>
     </div>
   )
 }
