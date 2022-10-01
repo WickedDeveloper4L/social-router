@@ -16,7 +16,7 @@ const Telegram = () => {
     const {name, value} = event.target
 
     setUsername(
-      prevUsername=>({
+      prevUsername =>({
         ...prevUsername,
         [name]: value
       })
