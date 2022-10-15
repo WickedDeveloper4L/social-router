@@ -12,6 +12,7 @@ const Instagram = () => {
   const [link, setLink] = React.useState({
     link: ""
   })
+  const [shortLink, setShortLink] = React.useState('')
   function handleChange(event){
     const {name, value} = event.target
 
@@ -35,6 +36,14 @@ const Instagram = () => {
       })
     )
   }
+  React.useEffect(
+    ()=>{
+      const longUrl = link.link
+      fetch(`https://api.shrtco.de/v2/shorten?url=${longUrl}`)
+      .then(response => response.json())
+      .then(data => setShortLink(data.result.short_link))
+    },[link]
+  )
   return (
     <div className='page'>
     <div className='instagram_container'>
@@ -57,9 +66,25 @@ const Instagram = () => {
         <span className="instagram_sublabel">link is below</span>
     </form>
     <div className='link_container'>
-    <span className='instagram_link'>{link.link}</span>
+    <span className="sublabel">Long link:</span>
+    <span className='instagram_link'>{link.link}</span>   
+    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy Long Link</CustomButton></CopyToClipboard>
+    {
+      shortLink.length ? (
+        <span className="sublabel">Shortened link:</span>
+    )
+    :
+    null
+    }
+    <span className="instagram_link">{shortLink}</span>
+    {
+      shortLink.length ? (
+        <CopyToClipboard text={shortLink} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy Short Link</CustomButton></CopyToClipboard>
+        )
+    :
+    null
+    }
     </div>
-    <CopyToClipboard text={link.link} onCopy={() => alert("Copied to Clipboard successfully")}><CustomButton className='button'>Copy to clipboard</CustomButton></CopyToClipboard>
     </div>
   )
 }
